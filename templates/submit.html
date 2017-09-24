@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title Word Index</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<!-- CSS styles for standard search box -->
+</head>
+<style>
+	a {
+		text-decoration: none;
+	}
+     table {
+         margin: 0 auto;
+     }
+     tr td:nth-child(1) {
+         text-align: right;
+     }
+</style>
+<body>
+	<table>
+		{% for doc in documents %}
+		<tr>
+		
+		<td><a href="https://openlibrary.org/books/{{ doc[1] }}">{{doc[0][0] }}</a></td><td><a href="https://openlibrary.org/books/{{ doc[1] }}">{{query}}</a></td> <td><a href="https://openlibrary.org/books/{{ doc[1] }}">{{ doc[0][1]}}</a></td>
+		
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
