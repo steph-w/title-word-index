@@ -10,4 +10,4 @@ To run, download the repository `https://github.com/steph-w/title-word-index.git
 
 `python main.py`
 
-navigate [](to http://127.0.0.1:5000/search)
+navigate to http://127.0.0.1:5000/search
