@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE WORD INDEX</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Source+Code+Pro" rel="stylesheet">
+<!-- CSS styles for standard search box -->
+</head>
+<body>
+<style>
+h1 {
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+form {
+  text-align: center;
+  font-family: 'Droid Sans', sans-serif;
+}
+</style>
+	<h1>TITLE WORD INDEX</h1>
+	<!-- HTML for SEARCH BAR -->
+      <form method="post" action="/search">
+        {{form.hidden_tag()}}
+        <p>
+          Please enter query: <br>
+          {{form.search(size=20)}} <br>
+          <input type="submit" value="Search">
+      	</p>
+      </form>
+</body>
+</html>
